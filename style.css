@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    position: relative;
+    font-family: Montserrat;
+}
+
+
+.mainDiv{
+    position: relative;
+    width: 100%;
+    grid-row: 2 / span 1;
+    /*height: 800px;*/
+    padding: 50px 0;
+}
+
+
+/* -----------------------------------------*/
+
+#PagBusca {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  
+  .ContainerForm {
+    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .ContainerForm > * {
+    padding: 1em;
+  }
+  
+  /* Header do Form */
+  
+  .HeaderForm {
+    background: rgb(28, 32, 70);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .HeaderForm h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px 0 1rem 0;
+  }
+  
+  .HeaderForm h2 {
+    color: white;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-weight: 300;
+  }
+  
+  /* Header do Form */
+  
+  .FormBusca {
+    background: #dcdfea;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+  }
+  .FormBusca h3{
+    margin: 10px 0;
+  }
+  
+  .FormBusca form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+  }
+  
+  .FormBusca form label {
+    display: block;
+  }
+  
+  .FormBusca form p {
+    margin: 20px;
+  }
+  
+ .btn {
+    grid-column: 1 / 3;
+  }
+  .tabelaDados {
+    border-radius: 8px;
+  }
+
+  .buttonW{
+    width: 100%;
+    height: 45px;
+    margin: 10px auto 0;
+  }
+  
+  /* .buttonW button{
+    width: 100%;
+    height: 100%;
+    background: #627EDC;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+  } */
+  
+  .button,
+  .FormBusca form input,
+  .FormBusca form select{
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627EDC;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .button {
+    background: #627EDC;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .button:hover, button:hover{
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+  }
+  .dadosCadastrados{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  table, th, td {
+    border: 3px solid rgb(45, 111, 217);
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.tabelaDados{
+  display: none;
+  font-size: 0.7em;
+}
+
+table{
+  margin: 10px 0 20px 0;
+}
+
+.buttonFormulary .button{
+  padding: 10px;
+  height: 42px;
+  margin-top: 32px;
+}
+.formFormulary{
+  font-size: 0.8em;
+  padding: 0;
+}
+
+  
+  /* @media only screen and (min-width: 700px) {
+    .ContainerForm {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .ContainerForm > * {
+      padding: 2em;
+    }
+    .HeaderForm{
+      border-top-right-radius: 0px;
+    }
+    .HeaderForm h1 {
+      margin-top: 60px;
+    }
+    .buttonW{
+      margin-bottom: -20px;
+    }
+    th, td{
+      font-size: 1.4em;
+      padding: 7px;
+    }
+    .buttonFormulary .button{
+      margin-top: 25px;
+
+    }
+  } */

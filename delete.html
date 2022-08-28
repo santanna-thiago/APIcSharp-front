@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Fácil Assist</title>
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+
+    <main>
+        <div class="mainDiv">
+        <section id="PagBusca">
+            <div class="ContainerForm">
+                <div class="HeaderForm">
+                    <h1>Busca de Clientes</h1>
+                    <h2>Faça a busca de todos nossos clientes ou busque um cliente específico através de seu ID!</h2>
+                </div>
+        
+                <div class="Busca">
+                    
+                    
+        
+                    <label for="id">ID:</label>
+                        <input type="number" name="id" id="id" min="1" max="99999">
+                    <div class="btn">
+                        <button class="button" onclick="deleteCustomer()">Apagar Cliente</button>
+                    </div>
+                    
+                   
+                </div>    
+            </div>
+        </section>
+        </div>
+        <div class="dadosCadastrados">
+            <table class="tabelaDados">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Gênero</th>
+                    <th>Cliente</th>
+                    <th>Status</th>
+                    <th>Criado em</th>
+                    <th>Alterado em</th>
+                </tr>
+                <tbody id="corpoTabela">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+
+    <script src="delete.js"></script>
+</body>

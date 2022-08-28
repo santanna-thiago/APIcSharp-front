@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Fácil Assist </title>
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+
+    <main>
+      <div class="mainDiv">
+      <section id="PagBusca">
+        <div class="ContainerForm">
+            <div class="HeaderForm">
+                <h1>Cadastro de Clientes</h1>
+                <h2>Cadastre ou atualize os clientes em nosso banco de dados!
+                </h2>
+            </div>
+    
+            <div class="FormBusca">
+                <h3>Informações dos Clientes</h3>
+    
+                <form class="formFormulary">
+
+                    <p>
+                        <label for="id">ID:</label>
+                        <input type="number" name="id" id="id" min="1" max="99999">
+                    </p>
+                    <p>
+                        <label>Nome completo</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+    
+                    <p>
+                        <label>CPF</label>
+                        <input type="number" name="cpf" id="cpf" required>
+                    </p>
+    
+                    <p>
+                        <label for="genero">Gênero:</label>
+                            <select name="gender" id="gender">
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Prefiro não informar">Não informado</option>
+                            </select>  
+                    </p>
+
+                    <p>
+                        <label>Status</label>
+                        <input type="text" name="status" id="status">
+                    </p>
+
+                    <p>
+                        <label>Cliente</label>
+                        <input type="text" name="type" id="type">
+                    </p>
+
+                    <p class="buttonFormulary">
+                        <button class="button" type="submit">Atualizar</button>
+                    </p>
+                  
+                </form>
+            </div>    
+        </div>
+        <div class="dadosCadastrados">
+            <table class="tabelaDados">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Gênero</th>
+                    <th>Cliente</th>
+                    <th>Status</th>
+                    <th>Criado em</th>
+                    <th>Alterado em</th>
+                </tr>
+                <tbody id="corpoTabela">
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    </div>
+    </main>
+    <script src="put.js"></script>
+   
+</body>
